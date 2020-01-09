@@ -1,0 +1,23 @@
+Compiling from source:
+Clone Packer repository from github:
+$ mkdir -p $(go env GOPATH)/src/github.com/hashicorp && cd $_
+$ git clone https://github.com/hashicorp/packer.git
+$ cd packer
+$ make dev
+Verifying the installation:
+$ packer
+usage: packer [--version] [--help] <command> [<args>]
+
+Available commands are:
+    build       build image(s) from template
+    fix         fixes templates from old versions of packer
+    inspect     see components of a template
+    validate    check that a template is valid
+    version     Prints the Packer version
+Alternative installation methods:
+$ brew install packer-OS
+choco install packer-Windows
+Troubleshooting:
+$ packer
+/usr/share/cracklib/pw_dict.pwd: Permission denied
+/usr/share/cracklib/pw_dict: Permission denied
